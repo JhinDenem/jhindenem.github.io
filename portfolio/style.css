@@ -1,0 +1,886 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #020412;
+}
+
+
+
+/*Navigációs bár*/
+
+nav img {
+    width: 250px;
+    height: 140px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.portfolioback img {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    border-radius: 50%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 53px 0;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 45px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav-links ul li a:hover {
+    color: #FFBD00;
+    transition: 0.6s all ease-in-out 0s;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF303F;
+    display: block;
+    margin: auto;
+    transition: 0.4s all ease-in-out 0s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/*---------Hamburger Menu------------*/
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    z-index: 100;
+    margin-right: 30px;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FF303F;
+    border-radius: 5px;
+    margin: 6px 0px;
+    transition: 0.8s;
+}
+
+.bar:nth-child(1) {
+    width: 60%;
+}
+
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    display: block;
+    z-index: 98;
+    background-color: #020412;
+    padding-top: 150px;
+    transition: 0.5s;
+}
+
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #FF303F;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-nav li {
+    list-style: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #FFBD00;
+}
+
+
+
+/*-------- Cím konténer ----------*/
+
+.container {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    position: relative;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FFBD00;
+    top: 90px;
+    left: 500px;
+    filter: opacity(30%);
+}
+
+.circle2 {
+    position: relative;
+}
+
+.circle2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FF303F;
+    top: 200px;
+    left: 600px;
+    filter: opacity(20%);
+}
+
+
+.nev {
+    font-size: 70px;
+    color: #fff;
+    padding: 200px 20px 20px 200px;
+
+}
+
+.szoveg01 {
+    font-size: 34px;
+    margin-left: 230px;
+    color: #FFBD00;
+}
+
+.btn {
+    margin-top: 88px;
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 6px;
+    position: relative;
+    border: 2px solid #FFBD00;
+    color: #FFBD00;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out 0s;
+    background: none;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: #FF303F;
+    border-color: #FF303F;
+}
+
+
+
+.user-img {
+    width: 610px;
+    position: absolute;
+    right: 4.2%;
+    filter: saturate(20%);
+    background: none;
+}
+
+/* --------CSÍKOK---------*/
+
+.scsik {
+    width: 100%;
+    height: 50px;
+    margin-top: 216px;
+    background: #FFBD00;
+    position: relative;
+}
+
+.scsik2 {
+    width: 100%;
+    height: 36px;
+    margin-top: 60px;
+    background: linear-gradient(90deg, rgba(255, 48, 63, 1), rgba(255, 189, 1));
+    position: relative;
+}
+
+.scsik3 {
+    width: 100%;
+    height: 36px;
+    margin-top: 60px;
+    background: linear-gradient(90deg, rgba(255, 189, 1), rgba(255, 48, 63, 1));
+    position: relative;
+}
+
+.scsik4 {
+    width: 100%;
+    height: 36px;
+    margin-top: 100px;
+    background: #FFBD00;
+    position: relative;
+}
+
+
+
+/*---------Rólam---------- */
+
+.magamtitle h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff724;
+    padding: 25px 0 20px 0;
+}
+
+.magamrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.rolamcol1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rolamcol1 img {
+    width: 700px;
+    height: 500px;
+}
+
+.rolamcol2 p {
+    color: #FFBD00;
+    font-size: 18px;
+    text-align: justify;
+    position: relative;
+    padding: 40px 70px 70px 0;
+}
+
+.magamcontact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.magamcontact-links a i {
+    padding: 20px;
+    text-decoration: none;
+    color: #FFBD00;
+}
+
+.magamcontact-links a i:hover {
+    color: #FF303F;
+    transition: color .45s;
+}
+
+.reveal {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+/*-------Készségek--------*/
+
+.skillstitle h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff724;
+}
+
+.skillscol {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+}
+
+
+
+.skills {
+    padding: 20px;
+}
+
+.skills h1 {
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.skills img {
+    width: 170px;
+    height: 160px;
+    padding: 0 15px;
+    filter: grayscale(100%);
+    transition: 0.3s all ease-in-out 0s;
+}
+
+.skills img:hover {
+    transform: scale(1.25);
+    filter: none;
+}
+
+/*--------Minta oldalak---------*/
+.mintatitle h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff724;
+    font-size: 32px;
+    padding: 30px 0;
+}
+
+.mintaall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minta {
+    position: relative;
+    margin: 10px;
+}
+
+.mintaimage {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.mintaoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    backdrop-filter: blur(5px);
+}
+
+.mintaoverlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+
+.mintaoverlay:hover {
+    opacity: 1;
+}
+
+.mintaoverlay:hover>* {
+    transform: translateY(0);
+}
+
+.mintatitle {
+    font-size: 2em;
+    font-weight: bold;
+    background: none;
+    margin-bottom: 8px;
+}
+
+.mintaleírás {
+    background: none;
+}
+
+.mintaleírás a i {
+    font-size: 30px;
+    background: none;
+    color: #FFBD00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mintaleírás a i:hover {
+    color: #FF303F;
+    transition: color 0.45s;
+}
+.mobiletitle{
+    display: none;
+}
+
+
+
+/*--------Elérhetőség ---------- */
+.contacttitle h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff724;
+    font-size: 32px;
+    padding: 20px 0;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cim1 h1 {
+    color: #fff724;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    color: #FFBD00;
+    max-width: 600px;
+    line-height: 65px;
+    font-size: 18px;
+}
+
+.contact-info i {
+    padding-right: 10px;
+}
+
+.contact-links {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-links a i {
+    font-size: 30px;
+    text-decoration: none;
+    color: #FFBD00;
+    padding: 20px;
+}
+
+.contact-links a i:hover {
+    color: #FF303F;
+    transition: color 0.45s;
+}
+
+/*---------FOOTER-----------------*/
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFBD00;
+    padding-top: 10px;
+}
+
+hr {
+    background-color: #FF303F;
+    height: 1px;
+    border: none;
+}
+
+/*----------MEDIA QUERY---------------- */
+/*----------700-1150--------------*/
+
+@media (min-width: 1150px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+@media (max-width:1350px) and (min-width:1150px){
+
+    .user-img{
+        width: 400px;
+        bottom: 0;
+    }
+
+}
+
+@media (max-width:1150px) and (min-width:750px) {
+
+    nav ul li a {
+        display: none;
+    }
+
+    .user-img {
+        display: none;
+    }
+
+    /*----Sticky navbar------*/
+
+    nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    nav.sticky ul {
+        width: auto;
+    }
+
+    /*-------Rólam section-----*/
+    .magamrow {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .rolamcol1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rolamcol2 p {
+        padding: 10px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*-------Készségek-----------*/
+
+    .skillscol {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .skillscol img {
+        filter: none;
+
+    }
+
+    .skills img:hover {
+        transform: scale(1);
+    }
+
+
+    /*---------Minta munka---------*/
+}
+
+
+@media screen and (max-width:850px) {
+
+    .circle {
+        display: none;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    .rolamcol1 img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+    }
+
+
+    .skillscol {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        margin: 50px;
+    }
+    .skillscol img{
+        margin: 5px;
+    }
+
+    .mintaall{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width:749px) and (min-width:359px){
+
+    
+    nav ul li a {
+        display: none;
+    }
+
+    nav img{
+        width: 160px;
+    }
+    .user-img {
+        display: none;
+    }
+
+    nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    nav.sticky ul {
+        width: auto;
+    }
+
+    .nev{
+        font-size: 40px;
+        padding: 120px 20px 20px 40px;
+    }
+    .szoveg01{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .scsik{
+        margin-top: 20px;
+    }
+    .scsik4{
+        margin-top: 50px;
+    }
+    .magamrow {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rolamcol1 img{
+        width: 359px;
+    }
+    .rolamcol2 p{
+        font-size: 16x;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .hamburger{
+        width: 70px;
+    }
+
+    .skillscol {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        margin: 50px;
+    }
+    .skillscol img{
+        margin: 0 auto;
+        padding: 0 15px;
+        filter: none;
+    }
+    .minta *{
+        max-width: 600px;
+    }
+
+    .mintaall{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        
+    }
+    .skills img:hover {
+        transform: scale(1);
+    }
+
+    .contact-info{
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 14px;
+
+    }
+
+}
+@media screen and (max-width:359px) and (min-width:319px){
+
+        
+    nav ul li a {
+        display: none;
+    }
+
+    nav img{
+        width: 180px;
+    }
+    .user-img {
+        display: none;
+    }
+
+    nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    nav.sticky ul {
+        width: auto;
+    }
+
+    .nev{
+        font-size: 40px;
+        padding: 120px 20px 20px 40px;
+    }
+    .szoveg01{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .scsik{
+        margin-top: 20px;
+    }
+    .scsik4{
+        margin-top: 50px;
+    }
+    .magamrow {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 0 ;
+    }
+
+    .rolamcol1 img{
+        width: 319px;
+        height: 180px;
+    }
+    .rolamcol2 p{
+        font-size: 16x;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .minta{
+        width: 319px;
+    }
+    .hamburger{
+        width: 70px;
+    }
+
+    .skillscol {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        margin: 50px;
+    }
+    .skillscol img{
+        margin: 0 auto;
+        padding: 5px;
+        width: 140px;
+        filter: none;
+    }
+
+    .mintaall{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skills img:hover {
+        transform: scale(1);
+    }
+
+    .contact-info{
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 14px;
+
+    }
+
+
+}
+
+@media  screen and (max-width:1025px) and (min-width:900px) {
+    
+    .minta {
+        width: 450px;
+    }
+
+}
+@media  screen and (max-width:1350px) and (min-width:1026px) {
+    
+    .scsik{
+        margin-top:200px;
+    }
+
+}
+@media  screen and (max-width:1281px) and (min-width:1280px){
+    .scsik{
+        margin-top:70px;
+    }
+    
+
+}
+
+
+
+
+
+
