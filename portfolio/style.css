@@ -675,10 +675,6 @@ hr {
     nav img{
         width: 160px;
     }
-    .nev{
-        margin-top: -150px;
-        padding-left: 100px;
-    }
     .szoveg01{
         margin-left: 100px;
     }
@@ -711,7 +707,7 @@ hr {
 
     .nev{
         font-size: 32px;
-        padding: 120px 20px 20px 40px;
+        padding: 100px 20px 20px 40px;
     }
     .szoveg01{
         margin-left: 30px;
