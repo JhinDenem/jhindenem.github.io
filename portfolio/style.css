@@ -348,12 +348,67 @@ nav {
     justify-content: center;
     font-size: 32px;
     color: #fff724;
+    margin: 30px;
 }
 
 .skillscol {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(5, 230px);
     justify-content: center;
+}
+.cardcontainer{
+    height: 190px;
+    width: 210px;
+    perspective: 800px;
+
+}
+
+.cardcontainer:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg)rotateZ(180deg);
+}
+
+.card{
+    height: 190px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1500ms;
+}
+
+.front,.front2,.front3,.front4,.front5,
+.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+.front{
+    background-image: url(./img/html5logo.png);
+}
+.front2{
+    background-image: url(./img/css3logo.png);
+}
+.front3{
+    background-image: url(./img/jslogo.png);
+}
+.front4{
+    background-image: url(./img/Bootstrap_logo.png);
+}
+.front5{
+    background-image: url(./img/wpblogo.png);
+}
+.back{
+    background-color: #FFBD00;
+    transform: rotateY(180deg)rotateZ(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back h1{
+    background-color: #FFBD00;
+    font-size: 21px;
 }
 
 
@@ -364,13 +419,11 @@ nav {
 
 .skills h1 {
     padding: 15px;
-    margin: 20px 0;
 }
 
 .skills img {
-    width: 170px;
-    height: 160px;
-    padding: 0 15px;
+    width: 190px;
+    height: 210px;
     filter: grayscale(100%);
     transition: 0.3s all ease-in-out 0s;
 }
