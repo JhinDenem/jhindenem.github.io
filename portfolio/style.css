@@ -385,19 +385,19 @@ nav {
 
 }
 .front{
-    background-image: url(./img/html5logo.png);
+    background-image: url(../portfolio/img/html5logo.png);
 }
 .front2{
-    background-image: url(./img/css3logo.png);
+    background-image: url(../portfolio/img/css3logo.png);
 }
 .front3{
-    background-image: url(./img/jslogo.png);
+    background-image: url(../portfolio/img/jslogo.png);
 }
 .front4{
-    background-image: url(./img/Bootstrap_logo.png);
+    background-image: url(../portfolio/img/Bootstrap_logo.png);
 }
 .front5{
-    background-image: url(./img/wpblogo.png);
+    background-image: url(../portfolio/img/wpblogo.png);
 }
 .back{
     background-color: #FFBD00;
