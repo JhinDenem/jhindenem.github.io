@@ -368,6 +368,7 @@ nav {
     transform: rotateY(180deg)rotateZ(180deg);
 }
 
+
 .card{
     height: 190px;
     width: 200px;
@@ -379,7 +380,7 @@ nav {
 .front,.front2,.front3,.front4,.front5,
 .back{
     height: 100%;
-    width: 100%;
+    width: 100%; 
     position: absolute;
     backface-visibility: hidden;
 
@@ -410,8 +411,6 @@ nav {
     background-color: #FFBD00;
     font-size: 21px;
 }
-
-
 
 .skills {
     padding: 20px;
@@ -664,8 +663,9 @@ hr {
 
     .skillscol {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 250px);
+        align-items: center;
+        justify-content: center;
     }
 
     .skillscol img {
@@ -675,6 +675,23 @@ hr {
 
     .skills img:hover {
         transform: scale(1);
+    }
+    .cardcontainer{
+        margin: 70px 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .cardcontainer:hover > .card{
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
+    
+    .back{
+        background-color: #FFBD00;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -697,6 +714,11 @@ hr {
         align-items: center;
         justify-content: center;
         width: 500px;
+    }
+    .cardcontainer{
+        margin: 70px 0;
+        width: 100px;
+        height: 100px;
     }
 
 
@@ -790,9 +812,15 @@ hr {
         width: 70px;
     }
 
+    .cardcontainer{
+        margin: 70px 0;
+        width: 100px;
+        height: 100px;
+    }
+
     .skillscol {
         display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(1, 200px);
         grid-template-rows: 1fr;
         justify-content: center;
         margin: 50px;
@@ -901,10 +929,18 @@ hr {
     .hamburger{
         width: 70px;
     }
+    .cardcontainer{
+        margin: 70px 0;
+        width: 100px;
+        height: 100px;
+    }
+    .skillstitle h1{
+        font-size: 23px;
+    }
 
     .skillscol {
         display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(1, 200px);
         grid-template-rows: 1fr;
         justify-content: center;
         margin: 50px;
